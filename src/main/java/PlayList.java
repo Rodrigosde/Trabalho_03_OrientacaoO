@@ -3,7 +3,7 @@ import java.util.List;
 
 public class PlayList {
     private String nome;
-    private List<Musicas> musicas;
+    private static List<Musicas> musicas;
 
     public PlayList(String nome) {
         this.nome = nome;
@@ -52,5 +52,9 @@ public class PlayList {
 
     public boolean verificarMusica(Musicas musica) {
         return this.musicas.contains(musica);
+    }
+
+    public static int getQuantidadeMusicas(){
+        return musicas.size();
     }
 }

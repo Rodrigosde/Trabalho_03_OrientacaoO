@@ -51,4 +51,16 @@ class PlayListTest {
         }
     }
 
+    @Test
+    void deveInserirDoisRegistros() {
+        Musicas musicas = new Musicas("Esse cara sou eu","Roberto Carlos");
+        Musicas musicas1 = new Musicas("Cheia de Manias","Raça Negra");
+        PlayList playList = new PlayList("Classicas");
+
+        playList.adicionarMusica(musicas);
+        playList.adicionarMusica(musicas1);
+
+        assertEquals(2, PlayList.getQuantidadeMusicas());
+    }
+
 }
