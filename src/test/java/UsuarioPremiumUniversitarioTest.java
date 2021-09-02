@@ -2,9 +2,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PremiumUniversitarioTest {
+class UsuarioPremiumUniversitarioTest {
 
-    Usuario premiumUniversitario = new PremiumUniversitario();
+    Usuario premiumUniversitario = new UsuarioPremiumUniversitario();
 
     @Test
     void identificarPessoa() {
@@ -20,7 +20,13 @@ class PremiumUniversitarioTest {
     }
 
     @Test
-    void deveRetornarValorDoPacoteDosetValor(){
+    void calculaValorPacoteComFuncao() {
+        premiumUniversitario.setValor(20.0f);
+        assertEquals(14.0f, premiumUniversitario.calculaValorPacote(70));
+    }
+
+    @Test
+    void deveRetornarExcecaoValorDoPacoteComSetNumDispositivos(){
         premiumUniversitario.setValor(20.0f);
         premiumUniversitario.setNumDispositivos(3);
         assertEquals(16.0, premiumUniversitario.calculaValorPacote());

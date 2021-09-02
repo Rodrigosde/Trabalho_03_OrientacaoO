@@ -1,4 +1,4 @@
-public class PremiumDuo extends Usuario{
+public class UsuarioPremiumDuo extends Usuario{
 
     public String identificarPessoa() {
         return getEmail();
@@ -8,5 +8,4 @@ public class PremiumDuo extends Usuario{
 
         return this.getValor() + (this.getNumDispositivos() * 10.0f);
     }
-
 }

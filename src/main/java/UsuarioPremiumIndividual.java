@@ -1,4 +1,4 @@
-public class PremiumIndividual extends Usuario{
+public class UsuarioPremiumIndividual extends Usuario{
 
     public String identificarPessoa() {
         return getEmail();

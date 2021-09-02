@@ -2,9 +2,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PremiumIndividualTest {
+class UsuarioPremiumIndividualTest {
 
-    Usuario premiumIndividual = new PremiumIndividual();
+    Usuario premiumIndividual = new UsuarioPremiumIndividual();
 
     @Test
     void identificarPessoa() {

@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,9 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ReceitaGeradaTest {
 
-    Usuario premiumduo = new PremiumDuo();
-    Usuario premiumindividual = new PremiumIndividual();
-    Usuario premiumuniversitario = new PremiumUniversitario();
+    Usuario premiumduo = new UsuarioPremiumDuo();
+    Usuario premiumindividual = new UsuarioPremiumIndividual();
+    Usuario premiumuniversitario = new UsuarioPremiumUniversitario();
     List<Usuario> lista = new ArrayList<Usuario>();
     ReceitaGerada receitaGerada = new ReceitaGerada();
 
