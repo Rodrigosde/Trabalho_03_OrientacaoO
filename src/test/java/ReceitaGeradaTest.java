@@ -7,9 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ReceitaGeradaTest {
 
-    Usuario premiumduo = new UsuarioPremiumDuo();
-    Usuario premiumindividual = new UsuarioPremiumIndividual();
-    Usuario premiumuniversitario = new UsuarioPremiumUniversitario();
+    UsuarioPremiumDuo premiumduo = new UsuarioPremiumDuo();
+    UsuarioPremiumIndividual premiumindividual = new UsuarioPremiumIndividual();
+    UsuarioPremiumUniversitario premiumuniversitario = new UsuarioPremiumUniversitario();
     List<Usuario> lista = new ArrayList<Usuario>();
     ReceitaGerada receitaGerada = new ReceitaGerada();
 

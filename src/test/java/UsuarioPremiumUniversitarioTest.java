@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UsuarioPremiumUniversitarioTest {
 
-    Usuario premiumUniversitario = new UsuarioPremiumUniversitario();
+    UsuarioPremiumUniversitario premiumUniversitario = new UsuarioPremiumUniversitario();
 
     @Test
     void identificarPessoa() {
@@ -30,5 +30,11 @@ class UsuarioPremiumUniversitarioTest {
         premiumUniversitario.setValor(20.0f);
         premiumUniversitario.setNumDispositivos(3);
         assertEquals(16.0, premiumUniversitario.calculaValorPacote());
+    }
+
+    @Test
+    void calculaArmazenamentoEmNuvem() {
+        premiumUniversitario.setValor(40.0f);
+        assertEquals(3200, premiumUniversitario.armazenamentoEmNuvem(premiumUniversitario.calculaValorPacote()));
     }
 }

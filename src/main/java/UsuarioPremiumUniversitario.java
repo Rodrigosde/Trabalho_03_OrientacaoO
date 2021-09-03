@@ -1,4 +1,4 @@
-public class UsuarioPremiumUniversitario extends Usuario{
+public class UsuarioPremiumUniversitario extends Usuario implements Armazenamento{
 
     public String identificarPessoa() {
         return this.getEmail();
@@ -10,5 +10,9 @@ public class UsuarioPremiumUniversitario extends Usuario{
 
     public float calculaValorPacote(float desconto) {
         return this.valor *  (desconto/100);
+    }
+
+    public float armazenamentoEmNuvem(float valor) {
+        return valor * 100 ;
     }
 }

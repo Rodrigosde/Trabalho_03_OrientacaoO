@@ -41,11 +41,7 @@ public abstract class Usuario {
         return this;
     }
 
-    public abstract float calculaValorPacote();
-
     public abstract String identificarPessoa();
 
-    public float calculaValorPacote(float desconto) {
-        return 0;
-    }
+    public abstract float calculaValorPacote();
 }
